@@ -14,7 +14,7 @@ const Card = ({ min, max, name, img, description, temp, dt }) => {
 	const dia = fecha.getDate();
 
 	// crea una cadena de fecha legible en el formato "YYYY-MM-DD HH:MM:SS"
-	const fechaLegible = `${anno}-${mes.toString().padStart(2, '0')} -${dia.toString().padStart(2, '0')}`;
+	const fechaLegible = `${anno}-${mes.toString().padStart(2, '0')}-${dia.toString().padStart(2, '0')}`;
 
 	console.log(fechaLegible);
 	return (
