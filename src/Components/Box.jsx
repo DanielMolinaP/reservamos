@@ -2,7 +2,7 @@ import React from 'react'
 import Card from "./Card.jsx"
 
 const Box = ({ cities, id, onClose }) => {
-	
+	console.log(cities)
 	return (
 		<div className='contenedor-card'>
 			<button onClick={()=>onClose(cities,id)} className='boton-x' >x</button> 
@@ -17,6 +17,7 @@ const Box = ({ cities, id, onClose }) => {
 							min={c.min}
 							name={cities.name}
 							img={c.img}
+							dt={c.dt}
 						/>
 					</div>
 				)

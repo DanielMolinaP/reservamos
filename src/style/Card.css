@@ -54,6 +54,10 @@
 .temp{
   text-align: center;
 }
+
+.fecha{
+  text-align: center;
+}
 .maxmin {
   display: flex;
   justify-content: space-evenly;

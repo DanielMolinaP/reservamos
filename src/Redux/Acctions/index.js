@@ -13,6 +13,7 @@ const aux = async (lat, lon) => {
   const response = await axios
     .get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=a5a47c18197737e8eeca634cd6acb581&units=metric`)
     .then((res) => res.data)
+    // console.log(response)
   return response
 }
 
@@ -26,6 +27,7 @@ const aux1 = async (city, name, id) => {
         max: Math.round(e.temp.max),
         img: e.weather[0].icon,
         temp: Math.round(e.temp.day),
+        dt: e.dt,
         description: e.weather[0].description,
       }
       return city
